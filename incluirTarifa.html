@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Incluir Tarifa</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/incluirestilo.css">
+    </head>
+    <body>
+        <header>
+            <nav class="dp-menu">
+                <ul>
+                    <li>
+                        <a href="principal.html">Home</a>
+                        <ul>
+                            <li>
+                                <a href="incluirCadastro.html">Cadastra-se</a>
+                            </li>
+                            <li>
+                                <a href="estacionamento.html">Estacionamento</a>
+                            </li>
+                            <li>
+                                <a href="carro_cliente.html">Carro cliente</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Incluir</a>
+                        <ul>
+                            <li>
+                                <a href="incluirTarifa.html">Inserir tarifa</a>
+                            </li>
+                            <li>
+                                <a href="incluirConvenio.html">Inserir convênio</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Consultas</a>
+                        <ul>
+                            <li>
+                                <a href="consultarCadastro.html">Consultar cadastro</a>
+                                <ul>
+                                    <li>
+                                        <a href="consultarIdcadastro.html">Consultar ID cadastro</a>
+                                    </li>
+                                    <li>
+                                        <a href="consultarPlaca_cadastro.html">Consultar placa do veículo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="consultarTarifa.html">Consultar tarifa</a>
+                                <ul>
+                                    <li>
+                                        <a href="consultarRegistro_tarifa.html">Consultar tipo tarifa</a>
+                                    </li>
+                                    <li>
+                                        <a href="consultarCliente_tarifa.html">Consultar cliente</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="consultarConvenio.html">Consultar convênio</a>
+                                <ul>
+                                    <li>
+                                        <a href="consultarRegistro_convenio.html">Consultar ID do convênio</a>
+                                    </li>
+                                    <li>
+                                        <a href="consultarLoja_convenio.html">Consultar loja conveniada</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Excluir</a>
+                        <ul>
+                            <li>
+                                <a href="excluirCadastro.html">Excluir cadastro</a>
+                            </li>
+                            <li>
+                                <a href="excluirTarifa.html">Excluir tarifa</a>
+                            </li>
+                            <li>
+                                <a href="excluirConvenio.html">Excluir convênio</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Alterar</a>
+                        <ul>
+                            <li>
+                                <a href="alterarCadastro.html">Alterar cadastro</a>
+                            </li>
+                            <li>
+                                <a href="alterarTarifa.html">Alterar tarifa</a>
+                            </li>
+                            <li>
+                                <a href="alterarConvenio.html">Alterar convênio</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="entrar">
+                        <a href="loginCadastro.html">Entrar</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <form action="mainTarifa.php" method="post">
+                <h3>Incluir Tarifa:</h3><br/>
+                <label>Digite o tipo tarifa:</label><br>
+                <input type="text" name="tipo_tarifa" size="10" placeholder="Tarifa" class="placeholder"/><br/><br/>
+
+                <label>Digite o tipo cliente: </label><br>
+                <input type="text" name="tipo_cliente" size="10" placeholder="Cliente" class="placeholder"/><br/><br/>
+
+                <label>Digite dia da semana:</label><br>
+                <select size=1 name="dia_da_semana">
+                    <option value="selecione">Selecione</option>
+                    <option value="Segunda-feira">Sengunda-feira</option>
+                    <option value="Terca-feira">Terça-feira</option>
+                    <option value="Quarta-feira">Quarta-feira</option>
+                    <option value="Quinta-feira">Quinta-feira</option>
+                    <option value="Sexta-feira">Sexta-feira</option>
+                    <option value="Sábado">Sábado</option>
+                    <option value="Domingo">Domingo</option>
+                </select><br><br>
+
+                <label>Digite o horário: </label><br>
+                <input type="text" name="horario" size="10" placeholder="Horário" class="placeholder"/>
+                <br/><br/><br/>
+                <input type="submit" name="acao" value="Incluir Tarifa" class="button"/>               
+            </form>       
+        </div>
+        <footer class="rodape">
+            @Todos os direitos reservados!
+        </footer>
+    </body>
+</html>

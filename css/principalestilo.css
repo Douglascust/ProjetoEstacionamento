@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+:root{
+    --cor-fundo: rgba(0,0,0,0.6);
+    --cor-hover:rgba(0,0,0,0.7);
+    --cor-primaira:rgb(225, 225, 225);
+}
+
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul{
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a{
+    color: var(--cor-primaira);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    padding: 10px 20px 10px 20px;
+    transition: background 0.5s;
+}
+
+.dp-menu ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*Sub menu*/
+
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    max-width: 200%;
+}
+
+.dp-menu ul li:hover>ul{
+    display: block;
+}
+
+.dp-menu ul ul{
+    width: 150px;
+}
+
+.dp-menu ul ul li a{
+    display: block;
+}
+
+/*Sub do sub menu*/
+
+.dp-menu ul ul ul{
+    margin-left: 150px;
+    top: 0px;
+    position: absolute;
+}
+
+.dp-menu ul li:last-child.entrar{
+    float: right;
+    background-color: rgb(0, 0, 0);
+}
+
+section{
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 15%;
+}
+
+section{
+    position: relative;
+    width: 100%;
+
+}
+
+.main{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    color: -webkit-linear-gradient(#C2C6C6 30%, #000);
+}
+
+.degrade{
+    /*Definindo um degradê como fundo */
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(54, 58, 59), rgb(161, 67, 67));
+        
+    /*apagaando do fundo tudo que não estiver imediatamente atrás de texto*/
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+     
+    /*Apagando o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+      
+    /* Cor que contraste com o degradê*/
+    color: black;
+        
+
+}
+
+.rodape{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: var(--cor-primaira);
+    padding: 30px 0 30px 0;
+    
+}
+
+button{
+    margin: 15px 5px 0 5px;
+}
+
+.butao a{
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: -3px;
+    border-radius: 5px;
+}
+
+.b1{
+    background: rgb(120, 197, 233);
+    color: var(--cor-primaira);
+}
+
+.b2{
+    background: rgb(209, 200, 200);
+    color: rgb(0, 0, 0);
+}
+
+.b1:hover{
+    background: rgb(81, 184, 231);
+}
+
+.b2:hover{
+    background: rgb(177, 171, 171);
+}
+
+
+/*Incluir tarifa*/
+
+.incluir{
+    background-image: -webkit-linear-gradient(180deg, #C2C6C6 30%, #000);
+}
+
+.containertarifa{
+    position: relative;
+    margin-top:11%;
+    width:25%;
+}
+
+.formulariotarifa{
+    box-shadow: 0 4px 3px rgb(0 0 0 / 40%), 0 8px 16px rgb(0 0 0 / 40%);
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #C2C6C6 ;
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.formulariotarifa input{
+    width: 100%;
+}
+
+.formulariotarifa .button{
+    width: 50%;
+    display: block;
+}

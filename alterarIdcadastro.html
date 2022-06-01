@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/alterarestilo.css">
+        <title>Alterar ID do cadastro</title>
+    </head>
+    <body>
+        <header>
+            <nav class="dp-menu">
+                <ul>
+                    <li>
+                        <a href="principal.html">Home</a>
+                        <ul>
+                            <li>
+                                <a href="incluirCadastro.html">Cadastra-se</a>
+                            </li>
+                            <li>
+                                <a href="estacionamento.html">Estacionamento</a>
+                            </li>
+                            <li>
+                                <a href="carro_cliente.html">Carro cliente</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Incluir</a>
+                        <ul>
+                            <li>
+                                <a href="incluirTarifa.html">Inserir tarifa</a>
+                            </li>
+                            <li>
+                                <a href="incluirConvenio.html">Inserir convênio</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Consultas</a>
+                        <ul>
+                            <li>
+                                <a href="consultarCadastro.html">Consultar cadastro</a>
+                                <ul>
+                                    <li>
+                                        <a href="consultarIdcadastro.html">Consultar ID cadastro</a>
+                                    </li>
+                                    <li>
+                                        <a href="consultarPlaca_cadastro.html">Consultar placa do veículo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="consultarTarifa.html">Consultar tarifa</a>
+                                <ul>
+                                    <li>
+                                        <a href="consultarRegistro_tarifa.html">Consultar tipo tarifa</a>
+                                    </li>
+                                    <li>
+                                        <a href="consultarCliente_tarifa.html">Consultar cliente</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="consultarConvenio.html">Consultar convênio</a>
+                                <ul>
+                                    <li>
+                                        <a href="consultarRegistro_convenio.html">Consultar ID do convênio</a>
+                                    </li>
+                                    <li>
+                                        <a href="consultarLoja_convenio.html">Consultar loja conveniada</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Excluir</a>
+                        <ul>
+                            <li>
+                                <a href="excluirCadastro.html">Excluir cadastro</a>
+                            </li>
+                            <li>
+                                <a href="excluirTarifa.html">Excluir tarifa</a>
+                            </li>
+                            <li>
+                                <a href="excluirConvenio.html">Excluir convênio</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Alterar</a>
+                        <ul>
+                            <li>
+                                <a href="alterarCadastro.html">Alterar cadastro</a>
+                            </li>
+                            <li>
+                                <a href="alterarTarifa.html">Alterar tarifa</a>
+                            </li>
+                            <li>
+                                <a href="alterarConvenio.html">Alterar convênio</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="entrar">
+                        <a href="loginCadastro.html">Entrar</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <form action="mainCadastro.php" method="post">
+                <h4>Alterar ID cadastro:</h4>
+            
+                Digite o CPF: <input type="text" name="cpf" size="20" /><br /><br />
+            
+                Digite o ID cadastro: <input type="text" name="id_cadastro" size="20" /><br /><br />
+            
+                <input type="submit" name="acao" value="Alterar id cadastro" />
+            </form>
+        </div>
+        <footer class="rodape">
+            @Todos os direitos reservados!
+        </footer>
+    </body>
+</html>

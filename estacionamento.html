@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        form{
+
+            margin-top: -20px;
+
+        }
+        body{
+
+            text-align: center;
+            
+
+        }
+        h2{
+            margin-top: 40px;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+        }
+        p{
+
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+
+        }
+        #bottom{
+            
+            background-color: rgb(80, 205, 255);
+            color: white;
+            height: 30px;
+            width: 130px;
+            font-weight:bold;
+            margin: 50px 0px 0px 0px;
+            border-style: hidden;
+
+        }
+        #bottom:hover{
+
+            background-color: rgb(150, 220, 248);
+
+        }
+        #inserir{
+
+            background-color: #f3f3f3;
+            margin-bottom:50px;
+            width: 440px;
+            height: 680px;
+            position: relative;
+            right: -380px;
+            border-radius: 40px;
+
+        }
+        #consultar{
+
+            background-color: #f3f3f3;
+            margin-bottom:50px;
+            width: 440px;
+            height: 200px;
+            position: relative;
+            right: -380px;
+            border-radius: 40px;
+
+        }
+
+        #consultar2{
+
+            background-color: #f3f3f3;
+            margin-bottom:50px;
+            width: 440px;
+            height: 340px;
+            position: relative;
+            right: -380px;
+            border-radius: 40px;
+
+        }
+        #alterar{
+
+            background-color: #f3f3f3;
+            margin-bottom:50px;
+            width: 440px;
+            height: 380px;
+            position: relative;
+            right: -380px;
+            border-radius: 40px;
+
+        }
+        #deletar{
+
+            background-color: #f3f3f3;
+            margin-bottom:50px;
+            width: 440px;
+            height: 290px;
+            position: relative;
+            right: -380px;
+            border-radius: 40px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="inserir">
+        <form action="main.php" method="post">
+            <h2> Incluir Estacionamento </h2>
+            <p>Digite a identificação do veículo:</p>
+            <input type="text" name="id_carro" size="20"/>
+            </br>
+            <p>Digite a data e hora de entrada:</p>
+            <input type="text" name="data_hora_entrada" size="20" placeholder="A/m/d H:m:s"/>
+            </br>
+            <p>Digite o valor a ser pago:</p>
+            <input type="text" name="valor" size="20"/>
+            </br>
+            <p>Digite a data e hora de saida:</p>
+            <input type="text" name="data_hora_saida" size="20" placeholder="A/m/d H:m:s"/>
+            </br>
+            <p>Digite o tipo do cliente:</p>
+            <input type="text" name="tipo_cliente" size="20"/>
+            </br>
+            <p>Digite a data do último pagamento:</p>
+            <input type="text" name="ultimo_pagamento" size="20" placeholder="A/m/d"/>
+            </br>
+            <input type="submit" name="estacionamento" value="Inserir" id="bottom"/>
+            </br>
+        </form>
+    </div>
+    <div id="consultar">
+        <form action="main.php" method="post">
+            <h2> Consultar Estacionamento </h2>
+            </br>
+            <input type="submit" name="estacionamento" value="ConsultarTudo" id="bottom"/>
+            </br>
+        </form>
+    </div>
+    <div id="consultar2">
+        <form action="main.php" method="post">
+            <h2> Consultar Código de Identificação Estacionamento </h2>
+            </br>
+            <p>Digite o código de identificação do veículo:</p>
+            <input type="text" name="id_carro" size="20"/>
+            </br>
+            <input type="submit" name="estacionamento" value="ConsultarId" id="bottom"/>
+            </br>
+        </form>
+    </div>
+    <div id="alterar">
+        <form action="main.php" method="post">    
+            <h2> Alterar Estacionamento </h2>
+            </br>
+            <p>Digite o código de identificação do veículo:</p>
+            <input type="text" name="id_carro" size="20" placeholder="código do veículo que será alterado"/>
+            </br>
+            <p>Digite a última data de pagamento: </p>
+            <input type="text" name="ultimo_pagamento" size="20" placeholder="A/m/d"/>
+            </br>
+            <input type="submit" name="estacionamento" value="Alterar" id="bottom"/>
+            </br>
+        </form> 
+    </div>
+    <div id="deletar">   
+        <form action="main.php" method="post">
+            <h2> Deletar Estacionamento </h2>
+            </br>
+            <p>Digite o código de identificação do veículo:</p>
+            <input type="text" name="id_carro" size="20" placeholder="código do veículo que será deletado"/>
+            </br>
+            <input type="submit" name="estacionamento" value="Deletar" id="bottom"/>
+        </form>
+    </div>
+</body>
+</html>

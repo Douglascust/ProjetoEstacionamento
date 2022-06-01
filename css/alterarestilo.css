@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(-45deg, #000000, #888585, #373a3b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    font-family: 'Arial';
+  }
+  
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+:root{
+    --cor-fundo: rgba(0,0,0,0.6);
+    --cor-hover:rgba(0,0,0,0.7);
+    --cor-primaira:rgb(225, 225, 225);
+}
+
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul{
+    background-color: var(--cor-fundo);
+}
+
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a{
+    color: var(--cor-primaira);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    padding: 10px 20px 10px 20px;
+    transition: background 0.5s;
+}
+
+.dp-menu ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*Sub menu*/
+
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    max-width: 200%;
+}
+
+.dp-menu ul li:hover>ul{
+    display: block;
+}
+
+.dp-menu ul ul{
+    width: 150px;
+}
+
+.dp-menu ul ul li a{
+    display: block;
+}
+
+/*Sub do sub menu*/
+
+.dp-menu ul ul ul{
+    margin-left: 150px;
+    top: 0px;
+    position: absolute;
+}
+
+.dp-menu ul li:last-child.entrar{
+    float: right;
+    background-color: rgb(0, 0, 0);
+}
+
+.rodape{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: var(--cor-primaira);
+    padding: 30px 0 30px 0;
+    
+}
+
+.container{
+    box-shadow: 0 4px 3px rgb(0 0 0 / 40%), 0 8px 16px rgb(0 0 0 / 40%);
+    border-radius: 8px;
+    margin: 3% 30% 0 30%;
+    width: 40%;
+    padding: 20px ;
+    padding-right: 32px;
+    padding-left: 32px; 
+}
+
+.placeholder{
+    padding-left: 10px;
+}
+
+.button{
+    width: 50%;
+    margin: 0 25% 0 25% ;
+    display: block;
+}
+
+input{
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.formulariotarifa input{
+    width: 100%;
+}
+
+.formulariotarifa .button{
+    width: 50%;
+    display: block;
+}
